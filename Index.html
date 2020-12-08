@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeusCoins</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo"></div><!--logo-->
+    
+        <nav>
+            <button data-js="btn">MENU</button>  
+            <ul data-js="menu-mobile">
+                <li><a href="#">INÍCIO</a></li>
+                <li><a href="#">COTAÇÃO</a></li>
+                <li><a href="" data-js="focusInput">PATRIMÔNIO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+
+    <section class="container">
+
+        <div class="logo-bitcoin">
+            <img src="imagens/bitcoin2.jfif" alt="">
+        </div>
+
+        <div class="price">
+            <h2>COTAÇÃO R$ 50.000</h2>
+            <button data-js="update-price">ATUALIZAR VALOR</button>
+        </div><!--price-->
+
+        <div class="patrimony">
+            <h2>Patrimônio Acumulado</h2>
+            <input data-js="p-value" type="number" placeholder="Digite um valor:">
+            <p data-js="result">VALOR ACUMULADO </p>
+        </div>
+     
+    </section><!--container-->
+
+    
+    <footer>
+        <span>All rights reserved - 2020</span>
+    </footer>
+
+    
+    <script src="scripts.js"></script>
+    <script src="menu-mobile.js"></script>
+    <script src="price.js"></script>
+
+</body>
+</html>
+    
