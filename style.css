@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    background: black;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+}
+
+nav button{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    padding: 5px;
+    display: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: rgb(250, 133, 0);
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul.active{
+    display: block;
+    text-align: center;
+    animation: animation-btn 0.5s forwards;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+nav ul li:hover{
+    padding: 10px;
+    background: rgba(247, 127, 0, 0.904);
+    border-radius: 10px;
+    transition: 0.1s ease-in;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+
+.logo-bitcoin img{
+    width: 100px;
+    height: 100px;
+}
+
+.price{
+    text-align: center;
+}
+
+.price h2{
+    font-weight: bold;
+    font-size: 60px;
+
+}
+
+.price button{
+    padding: 10px;
+    margin-top: 20px;
+    background: rgb(250, 133, 0);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 1px 3px black;
+}
+
+.price button:hover{
+    background: rgba(255, 132, 0, 0.856);
+}
+
+.patrimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.patrimony h2{
+    margin-bottom: 20px;
+}
+
+.patrimony input{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #777;
+}
+
+.patrimony p{
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgb(250, 133, 0);
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    background: rgb(10, 10, 10);
+}
+
+footer span{
+    color: white;
+}
+
+@keyframes animation-btn{
+    from {
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px){
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav button{
+        display: block;
+    }
+
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        background: rgb(24, 23, 23);
+        border: white;
+    }
+
+    nav ul li a{
+        padding: 10px 50px;
+    }
+
+    .price p{
+        text-align: center;
+    }
+
+};
+
