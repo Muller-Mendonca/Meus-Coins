@@ -84,6 +84,10 @@ nav ul li a{
     text-align: center;
 }
 
+.price p{
+    color: orange;
+}
+
 .price h2{
     font-weight: bold;
     font-size: 60px;
