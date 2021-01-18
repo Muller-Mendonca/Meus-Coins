@@ -1,6 +1,6 @@
 
 export default function initPrice(){
-
+  const update = document.querySelector("[data-js=update-price]");
 
   function startFech(){
     const url = 'https://blockchain.info/ticker';
@@ -13,17 +13,11 @@ export default function initPrice(){
       }).catch(erro => console.log(Error(erro)));
   }
    
-   
-  const update = document.querySelector("[data-js=update-price]");
-
   function updatePrice(e){
     e.preventDefault();
     startFech();
-    console.log('esta atualizando')
   };
-
   update.addEventListener('click', updatePrice);
-
  
  return startFech();
     //  const result = document.querySelector("[data-js=result]");
