@@ -1,7 +1,8 @@
 
 export default function initPrice(){
 
- 
+
+  function startFech(){
     const url = 'https://blockchain.info/ticker';
     const btcPreco = document.querySelector('[data-js="quotation"]');
     fetch(url)
@@ -10,20 +11,21 @@ export default function initPrice(){
     btcPreco.innerText = bitcoin.BRL.sell
     .toFixed(0);
       }).catch(erro => console.log(Error(erro)));
-  
+  }
+   
    
   const update = document.querySelector("[data-js=update-price]");
 
   function updatePrice(e){
     e.preventDefault();
-    console.log('Atualizou o preço');
-    return btcPreco;
+    startFech();
+    console.log('esta atualizando')
   };
 
   update.addEventListener('click', updatePrice);
 
  
-
+ return startFech();
     //  const result = document.querySelector("[data-js=result]");
     //  console.log(result);    
 };
