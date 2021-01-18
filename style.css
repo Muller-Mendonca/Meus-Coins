@@ -118,7 +118,8 @@ nav ul li a{
     text-align: center;
 }
 
-.patrimony h2{
+.patrimony h1{
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -127,7 +128,7 @@ nav ul li a{
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #777;
+    border: 1px solid #ccc;
 }
 
 .patrimony p{
