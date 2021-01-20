@@ -19,8 +19,19 @@ export default function initPrice(){
   };
   update.addEventListener('click', updatePrice);
 
+
+
+
+  const pValue = document.querySelector("[data-js=p-value]");
   const result = document.querySelector("[data-js=result]");
-  console.log(result);    
+  function patrimony(){
+   
+    console.log('patrimonio')
+    console.log(result)
+  }
+  pValue.addEventListener('mouseout', patrimony);
+
+  
  
  return startFech();
 };
