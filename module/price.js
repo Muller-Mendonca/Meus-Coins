@@ -18,8 +18,9 @@ export default function initPrice(){
     startFech();
   };
   update.addEventListener('click', updatePrice);
+
+  const result = document.querySelector("[data-js=result]");
+  console.log(result);    
  
  return startFech();
-    //  const result = document.querySelector("[data-js=result]");
-    //  console.log(result);    
 };
