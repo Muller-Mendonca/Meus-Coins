@@ -112,16 +112,30 @@ nav ul li a{
     background: rgba(255, 132, 0, 0.856);
 }
 
+.btn-patrimony button{
+    padding: 10px;
+    margin-top: 20px;
+    background: rgb(250, 133, 0);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 1px 3px black;
+}
+
+.btn-patrimony button:hover{
+    background: rgba(255, 132, 0, 0.856);
+}
+
 .patrimony{
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.patrimony h1{
-    font-size: 30px;
-    margin-bottom: 20px;
+    background: pink;
 }
 
 .patrimony input{
@@ -138,6 +152,7 @@ nav ul li a{
     font-size: 30px;
     color: rgb(250, 133, 0);
 }
+
 
 footer{
     display: flex;

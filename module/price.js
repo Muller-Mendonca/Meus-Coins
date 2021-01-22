@@ -25,8 +25,6 @@ export default function initPrice(){
   const pValue = document.querySelector("[data-js=p-value]");
   const result = document.querySelector("[data-js=result]");
   function patrimony(){
-   console.log(pValue.value);
-    
     result.innerText = ( 2000 / pValue.value);
   }
   pValue.addEventListener('mouseout', patrimony);
