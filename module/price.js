@@ -10,8 +10,11 @@ export default function initPrice(){
     .then((bitcoin) =>{
     btcPreco.innerText = bitcoin.BRL.sell
     .toFixed(0);
+    console.log(btcPreco)
       }).catch(erro => console.log(Error(erro)));
+      
   }
+
    
  // function updatePrice(e){
  //   e.preventDefault();
@@ -29,7 +32,5 @@ export default function initPrice(){
  // }
  // pValue.addEventListener('mouseout', patrimony);
 
-  
- 
- return startFech();
+ return startFech()
 };
