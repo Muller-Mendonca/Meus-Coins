@@ -128,12 +128,15 @@ nav ul li a{
     background: rgba(255, 132, 0, 0.856);
 }
 
-.modal-patrimony{
+.modal-container{
+    z-index: 2000;
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vw;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     visibility: hidden;
@@ -152,12 +155,14 @@ nav ul li a{
     align-items: center;
     flex-direction: column;
     width: 50%;
-    height: 20%;
+    min-width: 350px;
+    height: 40%;
     background-color: white;
 }
 
 .modal input{
     width: 350px;
+    max-width: 60%;
     padding: 10px;
     text-align: center;
     border-radius: 5px;

@@ -10,4 +10,4 @@ export default function initPatrimony(){
       pValue.addEventListener('mouseout', patrimony);
 
       console.log(initPrice())
-   };
+};
