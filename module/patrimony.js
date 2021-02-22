@@ -2,9 +2,9 @@ import initPrice from './price.js'
 
 export default function initPatrimony(){
 
-      const btn = document.querySelector("[btn-patrimony]");
+      const pValue = document.querySelector("[data-js=p-value]");
+      const btn = document.querySelector("[data-js=btn-calc]");
       const result = document.querySelector("[data-js=result]");
-
       function patrimony(){
         result.innerText = ( 2000 / pValue.value + ' bitcoin');
       }
