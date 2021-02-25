@@ -1,12 +1,15 @@
-import initPrice from './price.js'
+import startFech from './price.js'
 
 export default function initPatrimony(){
-
       const pValue = document.querySelector("[data-js=p-value]");
-      const btn = document.querySelector("[data-js=btn-calc]");
       const result = document.querySelector("[data-js=result]");
+      const btn = document.querySelector("[data-js=btn-calc]");
+      
       function patrimony(){
-        result.innerText = ( 2000 / pValue.value + ' bitcoins');
+        result.innerText = startFech();
       }
       btn.addEventListener('click', patrimony);
 }; 
+
+
+/// pValue.value + ' bitcoins'
