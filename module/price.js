@@ -2,12 +2,17 @@
 const btcPreco = document.querySelector('[data-js="quotation"]');
   
 export default async function startFech(){
-    const url = 'https://blockchain.info/ticker';
-    const response = await fetch(url)
-    const json = await response.json()
-    const bit = Number(json.BRL.sell.toFixed(0))
-    btcPreco.innerText = bit
-    console.log(bit)
+    try{
+      const url = 'https://blockchain.info/ticker';
+      const response = await fetch(url)
+      const json = await response.json()
+      const bit = Number(json.BRL.sell.toFixed(0))
+      btcPreco.innerText = bit
+    }
+    catch(error){
+     console.log(error)
+    }
+    
   }
 
 
