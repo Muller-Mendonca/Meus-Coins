@@ -1,10 +1,8 @@
 import initMenuMobile from './menuMobile.js'
-import initPrice from './price.js'
+import startPrice from './price.js'
 import initModal from './modal.js'
-//import initPatrimony from './patrimony.js'
 
 
 initMenuMobile();
-initPrice();
+startPrice();
 initModal();
-//initPatrimony();
