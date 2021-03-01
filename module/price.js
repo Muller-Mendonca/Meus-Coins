@@ -1,31 +1,33 @@
 
-const btcPreco = document.querySelector('[data-js="quotation"]');
+export default function startFetch(){
+  const btcPreco = document.querySelector('[data-js="quotation"]');
+  const pValue = document.querySelector("[data-js=p-value]");
+  const result = document.querySelector("[data-js=result]");
+  const btn = document.querySelector("[data-js=btn-calc]");
   
-export default async function startFech(){
-    try{
-      const url = 'https://blockchain.info/ticker';
-      const response = await fetch(url)
-      const json = await response.json()
-      const bit = Number(json.BRL.sell.toFixed(0))
-      btcPreco.innerText = bit
+  const bitcoinPrice = async () =>{
+      try{
+        const response = await fetch('https://blockchain.info/ticker')
+        const json = await response.json()
+        const bit = await Number(json.BRL.sell.toFixed(0))
+        btcPreco.innerText = bit;
+        return bit
+      }
+      catch(error){
+       console.log(error)
+      }
     }
-    catch(error){
-     console.log(error)
+
+    function patrimony(){
+      console.log(bitcoinPrice())
+      result.innerText = (bitcoinPrice() / pValue.value) + ' bitcoins';
+      
     }
-    
-  }
+    btn.addEventListener('click', patrimony);
+   
+    return bitcoinPrice()
+}
 
 
 
 
-//  export default function startFech(){
-//    const url = 'https://blockchain.info/ticker';
-//    const btcPreco = document.querySelector('[data-js="quotation"]');
-//    fetch(url)
-//    .then(response => response.json())
-//    .then((bitcoin) =>{
-//      const bit = Number(bitcoin.BRL.sell.toFixed(0));
-//       
-//      }).catch(erro => console.log(Error(erro)));
-//  }
-//  
