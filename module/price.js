@@ -11,7 +11,7 @@ export default function startFetch(){
         const json = await response.json()
         const bit = await Number(json.BRL.sell.toFixed(0))
         btcPreco.innerText = bit;
-        return bit
+        return result.innerText = bit / pValue.value;
       }
       catch(error){
        console.log(error)
@@ -19,9 +19,7 @@ export default function startFetch(){
     }
 
     function patrimony(){
-      console.log(bitcoinPrice())
-      result.innerText = (bitcoinPrice() / pValue.value) + ' bitcoins';
-      
+      bitcoinPrice()
     }
     btn.addEventListener('click', patrimony);
    
