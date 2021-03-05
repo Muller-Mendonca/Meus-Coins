@@ -13,7 +13,7 @@ export default function startPrice(){
       const bit = await Number(json.BRL.sell.toFixed(0))
       btcPreco.innerText = bit;
       if(pValue.value !== ''){
-        return result.innerText = pValue.value / bit + ' bitcoins';
+        return result.innerText = (pValue.value / bit).toFixed(2) + ' bitcoins';
       } 
     }
     catch(error){
