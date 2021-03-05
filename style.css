@@ -1,23 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -26,13 +27,13 @@ header{
     background: black;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
     background: #ccc;
 }
 
-nav button{
+nav button {
     position: absolute;
     top: 45px;
     right: 0;
@@ -45,58 +46,58 @@ nav button{
     color: white;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     width: 100%;
     list-style-type: none;
 }
 
-nav ul.active{
+nav ul.active {
     display: block;
     text-align: center;
     animation: animation-btn 0.5s forwards;
 }
 
-nav ul li{
+nav ul li {
     padding: 10px;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     padding: 10px;
     background: rgba(247, 127, 0, 0.904);
     border-radius: 10px;
     transition: 0.1s ease-in;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
     color: white;
 }
 
-.logo-bitcoin img{
+.logo-bitcoin img {
     width: 200px;
     height: 200px;
 }
 
-.price{
+.price {
     text-align: center;
 }
 
-.price p{
+.price p {
     color: orange;
     font-size: 20px;
 }
 
-.price h2{
+.price h2 {
     font-weight: bold;
     font-size: 60px;
-
+    animation: animeScale.5s forwards;
 }
 
-.price button{
+.price button {
     padding: 10px;
     margin-top: 20px;
     background: rgb(250, 133, 0);
@@ -109,11 +110,11 @@ nav ul li a{
     outline: none;
 }
 
-.price button:hover{
+.price button:hover {
     background: rgba(255, 132, 0, 0.856);
 }
 
-.btn-patrimony button{
+.btn-patrimony button {
     padding: 10px;
     margin-top: 20px;
     background: rgb(250, 133, 0);
@@ -125,11 +126,11 @@ nav ul li a{
     box-shadow: 1px 1px 3px black;
 }
 
-.btn-patrimony button:hover{
+.btn-patrimony button:hover {
     background: rgba(255, 132, 0, 0.856);
 }
 
-.modal-container{
+.modal-container {
     z-index: 2000;
     position: fixed;
     top: 0;
@@ -139,18 +140,17 @@ nav ul li a{
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s opacity 0,5s;
 }
 
-.modal-active{
+.modal-active {
     visibility: visible;
     opacity: 1;
 }
 
-.modal{
+.modal {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -163,10 +163,10 @@ nav ul li a{
     background-color: white;
     border: 4px solid rgb(253, 189, 12);
     box-shadow: 0 0 0 4px white;
-    animation: animeLeft 4s forwards;
+    animation: animeLeft 0.5s forwards;
 }
 
-.close{
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -184,28 +184,26 @@ nav ul li a{
     color: black;
 }
 
-.close:hover{
+.close:hover {
     background: #fc1d19;
 }
 
-
-.modal-wrapper{
+.modal-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.modal input{
+.modal input {
     width: 350px;
     max-width: 60%;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
     border: 1px solid #ccc;
-    
 }
 
-.calc{
+.calc {
     padding: 8px;
     margin-top: 20px;
     background: rgb(250, 133, 0);
@@ -218,19 +216,18 @@ nav ul li a{
     outline: none;
 }
 
-.calc:hover{
+.calc:hover {
     background: rgba(255, 132, 0, 0.856);
 }
 
-.modal p{
+.modal p {
     margin-top: 20px;
     font-weight: bold;
-    font-size: 30px; 
+    font-size: 30px;
     color: rgb(250, 133, 0);
 }
 
-
-footer{
+footer {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -238,13 +235,13 @@ footer{
     background: rgb(10, 10, 10);
 }
 
-footer span{
+footer span {
     color: white;
 }
 
-@keyframes animation-btn{
+@keyframes animation-btn {
     from {
-        transform: translate(0,-10px);
+        transform: translate(0, -10px);
         opacity: 0;
     }
     to {
@@ -252,33 +249,30 @@ footer span{
     }
 }
 
-@keyframes animeLeft{
-    from{
-        transform: translateX(-50px);
-        opacity: 0;
+@keyframes animeScale {
+    from {
+        transform: scale(0.5);
     }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
+    to {
+        transform: scale(1);
     }
 }
 
-@media (max-width: 600px){
-
-    header{
+@media (max-width: 600px) {
+    header {
         flex-direction: column;
     }
 
-    nav{
+    nav {
         display: flex;
         justify-content: center;
     }
 
-    nav button{
+    nav button {
         display: block;
     }
 
-    nav ul{
+    nav ul {
         width: 100%;
         position: absolute;
         top: 70px;
@@ -289,20 +283,17 @@ footer span{
         border: white;
     }
 
-    nav ul li a{
+    nav ul li a {
         padding: 10px 50px;
     }
 
-    .price p{
+    .price p {
         text-align: center;
     }
 
-    .modal{
- 
+    .modal {
         width: 50%;
         min-width: 350px;
         height: 30%;
     }
-
-};
-
+} ;
