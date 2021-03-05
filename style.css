@@ -163,7 +163,7 @@ nav ul li a{
     background-color: white;
     border: 4px solid rgb(253, 189, 12);
     box-shadow: 0 0 0 4px white;
-    animation: animeLeft 1s forwards;
+    animation: animeLeft 4s forwards;
 }
 
 .close{
