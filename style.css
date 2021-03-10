@@ -194,6 +194,10 @@ nav ul li a {
     flex-direction: column;
 }
 
+.modal h2 {
+    margin-bottom: 20px;
+}
+
 .modal input {
     width: 350px;
     max-width: 60%;
