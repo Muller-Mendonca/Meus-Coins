@@ -196,6 +196,8 @@ nav ul li a {
 
 .modal h2 {
     margin-bottom: 20px;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    color: rgb(255, 164, 60);
 }
 
 .modal input {
